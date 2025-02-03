@@ -1,0 +1,56 @@
+# 1. Basic For Loop (Iterating Over a List)
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)
+
+# 2. Using range() (Looping with Index)
+for i in range(5):  # Loops from 0 to 4
+    print(i)
+
+# With custom start and step
+for i in range(1, 10, 2):  # Loops from 1 to 9 with a step of 2
+    print(i)
+
+# 3. Looping with enumerate() (Index + Value)
+for index, fruit in enumerate(fruits):
+    print(f"Index {index}: {fruit}")
+
+# 4. Iterating Over a Dictionary
+person = {"name": "Alice", "age": 25, "city": "New York"}
+
+# Loop through keys and values
+for key, value in person.items():
+    print(f"{key}: {value}")
+
+# 5. Iterating Over a String
+for char in "Python":
+    print(char)
+
+# 6. List Comprehension (Concise For Loop)
+squares = [x**2 for x in range(5)]
+print(squares)  # Output: [0, 1, 4, 9, 16]
+
+# 7. Using zip() to Loop Over Multiple Lists
+names = ["Alice", "Bob", "Charlie"]
+ages = [25, 30, 35]
+
+for name, age in zip(names, ages):
+    print(f"{name} is {age} years old.")
+
+# 8. Reversed Loop (Using reversed())
+for num in reversed(range(1, 6)):
+    print(num)
+
+# 9. Using break and continue
+for i in range(10):
+    if i == 5:
+        break  # Exits the loop
+    if i % 2 == 0:
+        continue  # Skips even numbers
+    print(i)
+
+# 10. Using else with For Loop
+for i in range(3):
+    print(i)
+else:
+    print("Loop completed without break!")
