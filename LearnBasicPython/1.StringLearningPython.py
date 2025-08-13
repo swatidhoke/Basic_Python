@@ -36,9 +36,7 @@
 # text = "hello world, hello universe"
 # count_hello = text.count("hello")
 # print(count_hello)  # Output: 2
-
-
- class StringLearningPython:
+class StringLearningPython:
     '''
     Some basic usage of String data structure in Python
     '''
